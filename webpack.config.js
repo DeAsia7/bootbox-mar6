@@ -23,10 +23,20 @@ rules: [
 },
 ],
 },
+{
+    test: /\.(scss|css)$/.
+    use: [
+        MiniCssExtractPlugin.loader,
+        "css-loader",
+        "postcss-loader",
+        "sass-loader",
+    ];
+};
 plugins: [
 new HtmlWebpackPlugin({
 template: './src/index.html',
 }),
+new MiniCssExtractPlugin(),
 ],
 devServer: {
 static: './dist',
