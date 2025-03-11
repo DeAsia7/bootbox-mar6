@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
 entry: './src/index.js',
 output: {
@@ -13,6 +14,13 @@ rules: [
 { test: /\.css$/, use: ['style-loader',
 { test: /\.(mp3|wav)$/, use: ['file-loader'] },
 'css-loader'] },
+{
+    test: /\.js$/,
+    exclude: /mode_modules/,
+    use: {
+        loader: "babel-loader",
+    },
+},
 ],
 },
 plugins: [
