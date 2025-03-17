@@ -1,24 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap + Webpack</title>
 </head>
+<style>
+    .card {
+        margin: 0 auto; /* Added */
+        float: none; /* Added */
+        margin-bottom: 10px; /* Added */
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .card-img-top {
+        width: 100%;
+        height: 15vw;
+        object-fit: cover;
+    }
+
+</style>
 <body>
-    <div class="container">
-        <h1 class="text-primary">hey, bootstrap with webpack</h1>
-        <div class="card" style="width:v18rem;">
-            <div class="card-header">
-                featured
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">moneybagg</li>
-                <li class="list-group-item">rose</li>
-                <li class="list-group-item">felix</li>
-            </ul>
+    <h1>Top 3 Bias's From Stray Kids</h1>
+    <div class="card" style="width:400px">
+        <img class="card-img-top" src="bangchan2.jpg " style="width:100%">
+        <div class="card-body">
+          <h4 class="card-title">Bangchan</h4>
+          <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
         </div>
-    </div>
+      </div>
+      <br>
+
+      <div class="card" style="width:400px">
+        <img class="card-img-top" src=" " style="width:100%">
+        <div class="card-body">
+          <h4 class="card-title">Felix</h4>
+          <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+        </div>
+      </div>
+      <br>
+
+      <div class="card" style="width:400px">
+        <img class="card-img-top" src=" " style="width:100%">
+        <div class="card-body">
+          <h4 class="card-title">Hyunjin</h4>
+          <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+        </div>
+      </div>
+      <br>
+
     <script src="bundle.js"></script>
 </body>
 </html>
