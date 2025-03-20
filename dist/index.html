@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap + Webpack</title>
+<script defer src="bundle.js"></script><link href="main.css" rel="stylesheet"></head>
+<style>
+   
+    h1 {
+        text-align: center;
+    }
+
+    .card {
+        margin: auto;
+        justify-content: center;
+    }
+
+</style>
+<body>
+    <h1>Top 3 Bias's From Stray Kids</h1>
+    <div class="card" style="width:400px">
+        <img class="card-img-top" src="bangchan2.jpg">
+        <div class="card-body">
+          <h4 class="card-title">Bangchan</h4>
+          <p class="card-text">This hunk of meat is considered the dad of the group becaause he is the leader and plus he's the only person that can take care of the boys/kids. </p>
+        <a href="https://youtube.com/shorts/JOEZ789jhNI?si=Jq4TMO2COrJzdW8C" button type="button" class="btn btn-primary" data-bs-toggle="tooltip" title="CLICK ME!">
+            Click for a funny video!
+          </a>
+      </div>
+      </div>
+      <br>
+
+      <div class="card" style="width:400px">
+        <img class="card-img-top" src="felix2.jpg" >
+        <div class="card-body">
+          <h4 class="card-title">Felix</h4>
+          <p class="card-text"> I fell in love with felix because of his humour and his deep voice. I love how the guys always pick on him because he needs to speak english more than korean since he is australian. he's just so adorable </p>
+          <a href="https://youtube.com/shorts/AREF6Km43Mc?si=8KkFAWtLWkNgxsNA" button type="button" class="btn btn-primary" data-bs-toggle="tooltip" title="CLICK ME!">
+            Click for a funny video!
+          </a>
+        </div>
+        </div>
+      </div>
+      <br>
+
+      <div class="card" style="width:400px">
+        <img class="card-img-top" src="hyunjin.jpeg">
+        <div class="card-body">
+          <h4 class="card-title">Hyunjin</h4>
+          <p class="card-text"> This man was hand crafted by God himself. I love the way he dances and his long black hair is so cute on him. </p>
+       <a href="https://youtube.com/shorts/PFbIzczEiQw?si=zFKPl60eyKCiXyxP" button type="button" class="btn btn-primary" data-bs-toggle="tooltip" title="CLICK ME!">
+            Click for a funny video!
+          </a>
+        </div>
+      </div>
+      <br>
+      <script>
+        // Initialize tooltips
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+        </script>
+
+    <script src="bundle.js"></script>
+</body>
+</html>

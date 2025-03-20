@@ -42,9 +42,7 @@ new MiniCssExtractPlugin(),
 ],
 devServer: {
 static: './dist',
-port: 8080,
 hot: true,
-open: true,
 },
 mode: 'development', // or 'production' include minimization
 }
